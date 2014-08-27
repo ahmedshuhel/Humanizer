@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <Target Name="RestorePackages">
-    <Exec Command="&quot;$(MSBuildThisFileDirectory)tools\NuGet\NuGet.exe&quot; restore &quot;%(Solution.Identity)&quot;" />
+    <Exec Command="&quot;sudo mono --runtime=v4.0.30319 $(MSBuildThisFileDirectory)tools\NuGet\NuGet.exe&quot; restore &quot;%(Solution.Identity)&quot;" />
   </Target>
 
 </Project>
