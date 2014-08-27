@@ -10,5 +10,6 @@ install:
  - mozroots --import --sync
 cache: apt
 
+# Run the build script
 script:
-  - xbuild build.proj
+ - ./build.sh
